@@ -1,12 +1,16 @@
-from pessoa import Pessoa
+from pessoa2024 import Pessoa2024
+from pessoa2023 import Pessoa2023
 
-print("0lá somos a equipe dos power ranger nós somos buxos e vamos descobrir sua data de nacimento.")
+print("Olá, somos a equipe dos Power Rangers! Nós somos buxos e vamos descobrir sua data de nascimento.\n")
 
+while True:
+    calculator2 = input("Você fez aniversário esse ano?\nDigite [Sim] ou [Não]: ")
+    if calculator2 in ["Sim", "Não", "sim", "não", "nao", "Nao"]:
+        break
+    else:
+        print("Opção inválida, digite apenas Sim ou Não")
 
-calculator2 = input("Voce fez aniversario esse ano?\nDigite sua resposta:").capitalize
-
-
-if calculator2 == "Sim":
-    Pessoa.ano1()
-elif calculator2 == "Não":
-    Pessoa.ano2()
+if calculator2 == "Sim" or calculator2 == "sim":
+    Pessoa2024.ano1()
+elif calculator2 == "Não" or calculator2 == "não" or calculator2 == "Nao" or calculator2 == "nao":
+    Pessoa2023.ano2()
